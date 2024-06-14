@@ -69,4 +69,6 @@ dependencies {
 
     // step1: Add the dependency
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1")
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.6.1")
+    implementation("com.github.bumptech.glide:compose:1.0.0-beta01")
 }
