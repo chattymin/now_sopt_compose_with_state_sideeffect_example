@@ -25,7 +25,7 @@ import com.chattymin.compose_state_sideeffect.util.UiState
 
 @Composable
 fun HomeRoute(
-    viewModel: HomeViewModel = viewModel(),
+    viewModel: HomeViewModel = viewModel()
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
     val lifecycleOwner = LocalLifecycleOwner.current
@@ -42,8 +42,6 @@ fun HomeRoute(
                             Toast.LENGTH_SHORT
                         ).show()
                     }
-
-                    HomeSideEffect.NavigateToInfo -> TODO()
                 }
             }
     }
@@ -68,7 +66,6 @@ fun HomeRoute(
                 viewModel.getData()
             }
         }
-
     }
 }
 
